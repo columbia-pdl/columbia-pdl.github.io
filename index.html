@@ -45,7 +45,7 @@
     <div class="wrapper">
 
         <!-- Header -->
-        <header id="header" class="header">
+        <header id="header" class="header"><align left></align left>
             <div class="container header-inner">
 
                 <!-- Logo -->
@@ -53,49 +53,59 @@
                     <a href="http://www.engineering.columbia.edu">
                         <img class="logo-light" src="img/logos/NewEngineeringWhite.png" alt="Columbia | Engineering" />
                         <img class="logo-dark" src="img/logos/NewEngineeringBlack.png" alt="Columbia | Engineering" />
-                    </a>
+                    </a></align left>
                 </div>
                 <!-- End Logo -->
 
                
 
                 <!-- Mobile Navbar Icon -->
+
                 <div class="nav-mobile nav-bar-icon">
                     <span></span>
                 </div>
                 <!-- End Mobile Navbar Icon -->
-
+<nav id="navMenu"></nav>
+<script src="menu_header.js"></script>
                 <!-- Navbar Navigation -->
+                <!--
                 <div class="nav-menu">
+                    
                     <ul class="nav-menu-inner">
                         <li>
                             <a href="index.html">Home <i class="fa"></i></a>
                             
                         </li>
                         <li>
-                            <a href="events.html#events-build" class="">Build <i class=""></i></a>
+                            <a href="events.html#events-build" class="">Communicate <i class=""></i></a>
                             
                         </li>
                         <li>
-                            <a href="events.html#events-design" class="">Design <i class="fa"></i></a>
+                            <a href="events.html#events-design" class="">Lead <i class="fa"></i></a>
                         </li>
                         <li>
-                            <a href="events.html#events-network" class="">Network<i class="fa"></i></a>
+                            <a href="events.html#events-sync" class="">Collaborate<i class="fa"></i></a>
                             
                         </li>
                         <li>
-                            <a href="events.html#events-sync" class="">Sync<i class="fa"></i></a>
+                            <a href="events.html#events-all">Innovate<i class="fa"></i></a>
                             
                         </li>
                         <li>
-                            <a href="events.html#events-all">Practice<i class="fa"></i></a>
+                            <a href="events.html#events-network" class="">Connect<i class="fa"></i></a>
+                            
+                        </li>
+                        <li>
+                            <a href="events.html#events-all">Tech<i class="fa"></i></a>
                             
                         </li>
                         <li>
                             <a href="contact.html">Contact<i class="fa"></i></a>
                         </li>
                     </ul>
+                
                 </div>
+                -->
                 <!-- End Navbar Navigation -->
 
             </div>
@@ -233,53 +243,47 @@
 
                 </div>
             </div>
-        </section>
-        <!-- End About Section-->
-
-        <!-- Service Section -->
-        <section id="service" class="ptb ptb-sm-80">
+            <br />
+            <br />
+            <br />
             <div class="wow fadeInLeft container text-center">
-                <h3>The Building Blocks</h3>
-                <div class="spacer-60"></div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 mb-45">
+                    <div class="col-sm-2 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
                         <h5>Communication</h5>
                         <!--
                         <p>Communication is the cornerstone of success. Through various workshops and trainings, students learn to master communication skills through writing, public speaking, networking and collaborative activities.</p>
                         -->
                     </div>
-                    <div class="col-md-4 col-sm-12 mb-45">
+                    <div class="col-sm-2 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-person-outline"></i></div>
                         <h5>Leadership</h5>
                         <!--
                         <p>Understanding the nature of leadership, identifying the qualities of effective leaders, and assessing your own leadership style will increase your competitive edge and effectiveness as a leader.  Workshops and guest speakers will develop a foundation of skills for leading a team through a project, competition, or at work.</p>
                         -->
                     </div>
-                    <div class="col-md-4 col-sm-12 mb-45">
+                    <div class="col-sm-2 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-people-outline"></i></div>
-                        <h5>Teamwork</h5>
+                        <h5>Collaboration</h5>
                         <!--
                         <p>Teamwork and collaboration are essential components to bring a project to fruition.  Understanding how teams function, group dynamics and conflict resolution are the skills that can make you an invaluable member of a team and a valuable asset in an organization.</p>
                         -->
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 mb-45">
+                    <div class="col-sm-2 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-color-filter-outline"></i></div>
-                        <h5>Design Thinking</h5>
+                        <h5>Design <br /> & <br /> Innovation</h5>
                         <!--
                         <p>Design Thinking allows students to think beyond the constraints of established processes and known solutions for everyday problems.  Students are encouraged to work on solutions to questions that haven’t been asked and problems that haven’t been identified yet.</p>
                         -->
                     </div>
-                    <div class="col-md-4 col-sm-12 mb-45">
+                    <div class="col-sm-2 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
-                        <h5>ENTREPRENEURSHIP & INNOVATION</h5>
+                        <h5>Networking</h5>
                         <!--
                         <p>Technology and innovation are the driving forces in solving complex problems around the world. Creative problem solving and the entrepreneurial mindset are important to developing a successful venture, whether as a start-up or working on a project within a company.</p>
                         -->
                     </div>
-                    <div class="col-md-4 col-sm-12 mb-45">
+                    <div class="col-sm-2 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-lightbulb-outline"></i></div>
                         <h5>Tech Skills</h5>
                         <!--
@@ -301,11 +305,13 @@
                 <!-- work Filter -->
                 <div class="row">
                     <ul class="container-filter categories-filter">
-                        <li><a class="categories active" data-filter="*">All</a></li>
-                        <li><a class="categories" data-filter=".build">Build</a></li>
-                        <li><a class="categories" data-filter=".design">Design</a></li>
-                        <li><a class="categories" data-filter=".network">Network</a></li>
-                        <li><a class="categories" data-filter=".sync">Sync</a></li>
+                        <li><a class="categories active" data-filter=".all">All</a></li>
+                        <li><a class="categories" data-filter=".communicate">Communicate</a></li>
+                        <li><a class="categories" data-filter=".lead">Lead</a></li>
+                        <li><a class="categories" data-filter=".collaborate">Collaborate</a></li>
+                        <li><a class="categories" data-filter=".innovate">Innovate</a></li>
+                        <li><a class="categories" data-filter=".connect">Connect</a></li>
+                        <li><a class="categories" data-filter=".tech">Tech</a></li>
                     </ul>
                 </div>
                 <!-- End work Filter -->
@@ -315,15 +321,15 @@
                 <div class="row">
                     <div class="container-grid nf-col-4">
 
-                        <div class="nf-item build">
+                        <div class="nf-item communicate">
                             <div class="item-box">
-                                <a class="" href="events.html#events-build" title="Consequat massa quis">
+                                <a class="" href="https://www.eventbrite.com/e/resume-reviews-making-the-most-of-graduate-career-fairs-tickets-28194686065" title="Consequat massa quis">
                                     <img class="item-container" src="img/portfolio/writing.jpg" alt="1" />
                                     <div class="item-mask">
                                         <div class="item-caption">
                                             <h5 class="lightblue">Communication | Writing</h5>
                                             <p class="white">Improve your writing skills whether it's for an academic assignment, business proposal, resume, cover letter, or a project.</p>
-                                            <p class="salmon"> Click here for workshops and events.</p>
+                                            <p class="salmon">Click here to register</p>
                                         </div>
                                     </div>
                                 </a>
@@ -338,7 +344,7 @@
                                         <div class="item-caption">
                                             <h5 class="lightblue">Industry Partnerships</h5>
                                             <p class="white">Meet and collaborate with various industry professionals.</p>
-                                            <p class="salmon"> Click here for workshops and events.</p>
+                                            <p class="salmon"> Click here to register</p>
                                         </div>
                                     </div>
                                 </a>
@@ -353,7 +359,7 @@
                                         <div class="item-caption">
                                             <h5 class="lightblue">Communication | Storytelling</h5>
                                             <p class="white">Elevator pitches, research talks, presentations, start-up pitches - learn how to engage your audience.</p>
-                                            <p class="salmon"> Click here for workshops and events.</p>
+                                            <p class="salmon"> Click here to register</p>
                                         </div>
                                     </div>
                                 </a>
@@ -368,7 +374,7 @@
                                         <div class="item-caption">
                                             <h5 class="lightblue">Communication | Collaboration</h5>
                                             <p class="white">Build your communication skills for collaborative projects, employment or your start-up. Learn how to approach difficult conversations and gain conflict resolution skills.</p>
-                                            <p class="salmon"> Click here for workshops and events.</p>
+                                            <p class="salmon"> Click here to register</p>
                                         </div>
                                     </div>
                                 </a>
@@ -383,7 +389,7 @@
                                         <div class="item-caption">
                                             <h5 class="lightblue">Communication | Cross-Cultural </h5>
                                             <p class="white">As global citizens cultural awareness and inclusion is critical to personal and professional development and community building. Learn essential skills in cross-cultural dialogue, active listening, inclusion, and awareness.</p>
-                                            <p class="salmon"> Click here for workshops and events.</p>
+                                            <p class="salmon"> Click here to register</p>
                                         </div>
                                     </div>
                                 </a>
@@ -398,7 +404,7 @@
                                         <div class="item-caption">
                                             <h5 class="lightblue">Networking | Alumni</h5>
                                             <p class="white">Connect and expand your network with alumni in various engineering and business industries.</p>
-                                            <p class="salmon"> Click here for workshops and events.</p>
+                                            <p class="salmon"> Click here to register</p>
                                         </div>
                                     </div>
                                 </a>

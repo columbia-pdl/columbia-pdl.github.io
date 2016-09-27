@@ -1151,6 +1151,7 @@ form label.error {
 .header-fixed .logo a {
     width: 400px;
     margin-top: 13px;
+    margin-left: -60px;
     /*margin-bottom: 15px;*/
     transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -1212,7 +1213,7 @@ form label.error {
 @media all and (max-width: 1200px) and (min-width: 780px) {
 
     .logo {
-        position: relative;
+        position: static;
         left: 40px;
     }
 
@@ -1223,7 +1224,7 @@ form label.error {
     .header-inner {
         padding-left: 30px;
         padding-right: 30px;
-        position: relative;
+        position: static;
         display: table;
         width: 100%;
     }
@@ -1247,7 +1248,7 @@ form label.error {
     .header-inner {
         padding-left: 30px;
         padding-right: 30px;
-        position: relative;
+        position: static;
         display: table;
         width: 100%;
     }
@@ -1255,7 +1256,8 @@ form label.error {
     .header .logo a {
         margin-top: 20px;
         margin-bottom: 24px;
-        width: 250px;
+        width: 100%;
+        margin-left: 30px;
         transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
@@ -1270,7 +1272,7 @@ form label.error {
     text-align: left;
     display: inline-block;
     position: relative;
-    left: -25px;
+    left: -100px;
 }
 
     .logo a {
