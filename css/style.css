@@ -1213,7 +1213,7 @@ form label.error {
 @media all and (max-width: 1200px) and (min-width: 780px) {
 
     .logo {
-        position: static;
+        position: relative;
         left: 40px;
     }
 
@@ -1224,7 +1224,7 @@ form label.error {
     .header-inner {
         padding-left: 30px;
         padding-right: 30px;
-        position: static;
+        position: relative;
         display: table;
         width: 100%;
     }
@@ -1248,7 +1248,7 @@ form label.error {
     .header-inner {
         padding-left: 30px;
         padding-right: 30px;
-        position: static;
+        position: relative;
         display: table;
         width: 100%;
     }
@@ -1339,7 +1339,7 @@ form label.error {
 .nav-menu ul.nav-menu-inner li a {
     font-family: inherit;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 600;
     text-transform: uppercase;
@@ -1353,7 +1353,7 @@ form label.error {
 }
 
 .nav-menu ul.nav-menu-inner > li > a {
-    padding: 41px 15px;
+    padding: 35px 12px;
 }
 
 .header .nav-menu ul.nav-menu-inner > li.active a,
