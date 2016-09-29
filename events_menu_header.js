@@ -6,23 +6,23 @@ document.getElementById("navMenu").innerHTML =
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-lead\';onPageLoad()"><i class="ion ion-ios-compose-outline"></i>Lead</a>\n' 
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-lead\';onPageLoad()"><i class="ion ion-ios-person-outline"></i>Lead</a>\n' 
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-collaborate\';onPageLoad()"><i class="ion ion-ios-compose-outline"></i>Collaborate</a>\n' 
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-collaborate\';onPageLoad()"><i class="ion ion-ios-people-outline"></i>Collaborate</a>\n' 
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-innovate\';onPageLoad()"><i class="ion ion-ios-compose-outline"></i>Innovate</a>\n' 
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-innovate\';onPageLoad()"><i class="ion ion-ios-lightbulb-outline"></i>Innovate</a>\n' 
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-connect\';onPageLoad()"><i class="ion ion-ios-compose-outline"></i>Connect</a>\n' 
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-connect\';onPageLoad()"><i class="ion ion-ios-color-filter-outline"></i>Connect</a>\n' 
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-tech\';onPageLoad()"><i class="ion ion-ios-compose-outline"></i>Tech</a>\n' 
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-tech\';onPageLoad()"><i class="ion ion-ios-gear-outline"></i>Tech</a>\n' 
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
