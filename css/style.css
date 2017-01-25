@@ -1256,7 +1256,7 @@ form label.error {
     .header .logo a {
         margin-top: 20px;
         margin-bottom: 24px;
-        width: 100%;
+        width: 40vw;
         margin-left: 30px;
         transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
@@ -1272,11 +1272,11 @@ form label.error {
     text-align: left;
     display: inline-block;
     position: relative;
-    left: -100px;
+    /*left: -100px;*/
 }
 
     .logo a {
-        width: 400px;
+        width: 25vw;
         display: block;
         margin-top: 13px;
         /*margin-bottom: 28px;*/
@@ -1299,6 +1299,18 @@ form label.error {
         }
 
 
+@media all and (min-width: 1280px) and (max-width: 1700px){
+
+    .header .logo a {
+        width: 20vw;
+    }
+}
+@media all and (min-width: 1700px) {
+
+    .header .logo a {
+        width: 300px;
+    }
+}
 
 /*------------------------------------------------------------------*/
 /* Navigation Menu Style */
