@@ -14,7 +14,7 @@ $(function () {
         $('body').delay(350).css({ 'overflow': 'visible' });
 
         // Portfolio Grid Masonry
-        containerGridMasonry();
+        //containerGridMasonry();
     })
 
 
@@ -23,6 +23,7 @@ $(function () {
     // ---------------------------------------------------------------------------------------------------------------------------->
 
     $(document).ready(function () {
+	    load_events();
         fullScreenSlider();
         stickHeader();
         int_introHeight();
@@ -30,10 +31,13 @@ $(function () {
         pluginElement();
         sliderHero();
         sliderAll();
-        containerGridMasonry();
-        scrollCallbackEle();
+	    scrollCallbackEle();
         shortcodeElements();
-
+        $(window).load(function() {
+            $('.container-grid').isotope({ filter: '.all' });
+            $('.container-masonry').isotope({ filter: '.all' });
+        });
+        
     });
 
 
@@ -462,67 +466,7 @@ $(function () {
     };
 
 
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // CONTAINER GRID & MESONRY FUNCTIONS (Portfolio, blog, etc)   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
 
-    function containerGridMasonry() {
-
-        // Gria Element
-
-        // ISOTOPE MASONRY ELEMENT  ||--------------
-        var $container = $('.container-masonry');
-        $container.imagesLoaded(function () {
-            $container.isotope({
-                itemSelector: '.nf-item',
-                layoutMode: 'masonry',
-                masonry: {
-                    columnWidth: 0,
-                    gutter: 0
-                },
-            });
-        });
-
-        // bind filter button click
-        $('.container-filter').on('click', '.categories', function () {
-            var filterValue = $(this).attr('data-filter');
-            $container.isotope({ filter: filterValue });
-        });
-
-        // ISOTOPE GRID ELEMENT  ||--------------
-        var $container2 = $('.container-grid');
-        $container2.imagesLoaded(function () {
-            $container2.isotope({
-                itemSelector: '.nf-item',
-                layoutMode: 'fitRows'
-            });
-        });
-
-        // bind filter categories click
-        $('.container-filter').on('click', '.categories', function () {
-            var filterValue = $(this).attr('data-filter');
-            $container2.isotope({ filter: filterValue });
-        });
-
-        // change active class on categories
-        $('.categories-filter').each(function (i, buttonGroup) {
-            var $buttonGroup = $(buttonGroup);
-            $buttonGroup.on('click', '.categories', function () {
-                $buttonGroup.find('.active').removeClass('active');
-                $(this).addClass('active');
-            });
-
-        });
-
-
-        // Masonry Element
-        var container = $('.masonry');
-        container.masonry({
-            // columnWidth: 0,
-            itemSelector: '.nf-item'
-        });
-
-    };
 
     // ---------------------------------------------------------------------------------------------------------------------------->
     // SCROLL CALLBACK FUNCTION  ||-----------

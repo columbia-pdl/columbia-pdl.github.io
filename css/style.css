@@ -3524,6 +3524,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 
     .item-box a {
         display: inline-block;
+        width: 100%;
     }
 
     .item-box:hover .item-mask {
