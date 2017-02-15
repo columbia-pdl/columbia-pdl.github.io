@@ -37,6 +37,13 @@ $(function () {
             $('.container-grid').isotope({ filter: '.past' });
             setTimeout( function() {
                 $('.container-grid').isotope({ filter: '.all' });
+                try{
+                    onPageLoad();
+                }
+                catch(err){
+                    
+                }
+
             // if($filter){
             //     $filter.click();
             //     // $('.container-masonry').isotope({ filter: '.all' });
