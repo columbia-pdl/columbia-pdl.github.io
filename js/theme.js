@@ -34,8 +34,14 @@ $(function () {
 	    scrollCallbackEle();
         shortcodeElements();
         $(window).load(function() {
-            $('.container-grid').isotope({ filter: '.all' });
-            $('.container-masonry').isotope({ filter: '.all' });
+            $('.container-grid').isotope({ filter: '.past' });
+            // setTimeout( function() {
+                $('.container-grid').isotope({ filter: '.all' });
+            // if($filter){
+            //     $filter.click();
+            //     // $('.container-masonry').isotope({ filter: '.all' });
+            // }
+            // }, 500);
         });
         
     });

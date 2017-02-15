@@ -210,13 +210,14 @@
                 <!-- work Filter -->
                 <!<div class="row">
                     <ul class="container-filter categories-filter">
-                        <li><a class="categories active" data-filter=".all">All</a></li>
+                        <li><a class="categories" data-filter=".all">All</a></li>
                         <li><a class="categories" data-filter=".communicate"><img alt="1" src="img/portfolio/ios7-compose.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".lead"><img alt="1" src="img/portfolio/ios7-person.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".collaborate"><img alt="1" src="img/portfolio/ios7-people.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".innovate"><img alt="1" src="img/portfolio/ios7-lightbulb.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".connect"><img alt="1" src="img/portfolio/ios-color-filter.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".tech"><img alt="1" src="img/portfolio/ios7-gear.png" class="item-container"></a></li>
+                        <li><a class="categories" data-filter=".past">Past</a></li>
                     </ul>
                 </div>
                 <!-- End work Filter -->
@@ -371,13 +372,17 @@
         if ( ! $filter.length ) {
             return;
         }
+        // $('.container-masonry').isotope({ filter: '.past' });
         setTimeout( function() {
-            $filter.click();
+             $('.container-masonry').isotope({ filter: '.' + category });
         }, 500);
-        var a = document.getElementById('events');
-        setTimeout( function() {
-            a.scrollIntoView(true);
-        }, 500);
+        // setTimeout( function() {
+        //     $filter.click();
+        // }, 1000);
+        // var a = document.getElementById('events');
+        // setTimeout( function() {
+        //     a.scrollIntoView(true);
+        // }, 1000);
     }
     </script>
 

@@ -27,13 +27,18 @@ function load_events() {
                         </div>\
 ';
 		var $event_htmls = []
-		for(i = 0; i < Math.min(60, data['events'].length); i++){
+		for(i = 0; i < Math.min(100, data['events'].length); i++){
 			info = data['events'][i];
 			$des = $(info['description']['html']);
 			var tags = [];
-			tmp = $des.filter("#tags").html();
-			if(tmp) {tags = tmp.split(",")};
-			tags.push("all");
+			if(info['status']=='live'){
+				tmp = $des.filter("#tags").html();
+				if(tmp) {tags = tmp.split(",")};
+				tags.push("all");
+			}
+			else{
+				tags.push("past");
+			}
 			if($event_htmls.length){
 			    $event_htmls = $event_htmls.add((html_template.format(tags.join(" "),info["url"],info['logo']['url'],
 								    info['name']['text'],
