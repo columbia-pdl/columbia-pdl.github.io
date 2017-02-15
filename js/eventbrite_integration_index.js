@@ -9,7 +9,7 @@ String.prototype.format = function() {
 
 
 function load_events() {
-	$.getJSON('https://es07avk58j.execute-api.us-east-1.amazonaws.com/prod/get_events',{'action':'organizer_events'}, function(data){
+	$.getJSON('https://lul21s7ud8.execute-api.us-west-2.amazonaws.com/prod/get_events',{'action':'organizer_events'}, function(data){
 		var i;
 		var html_template = '                        <div class="nf-item {0}"> \
                             <div class="item-box">\
