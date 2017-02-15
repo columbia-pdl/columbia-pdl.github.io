@@ -35,13 +35,13 @@ $(function () {
         shortcodeElements();
         $(window).load(function() {
             $('.container-grid').isotope({ filter: '.past' });
-            // setTimeout( function() {
+            setTimeout( function() {
                 $('.container-grid').isotope({ filter: '.all' });
             // if($filter){
             //     $filter.click();
             //     // $('.container-masonry').isotope({ filter: '.all' });
             // }
-            // }, 500);
+            }, 500);
         });
         
     });
