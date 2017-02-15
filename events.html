@@ -373,16 +373,16 @@
             return;
         }
         // $('.container-masonry').isotope({ filter: '.past' });
-        setTimeout( function() {
-             $('.container-masonry').isotope({ filter: '.' + category });
-        }, 1000);
         // setTimeout( function() {
-        //     $filter.click();
+        //      $('.container-masonry').isotope({ filter: '.' + category });
         // }, 1000);
+        setTimeout( function() {
+            $filter.click();
+        }, 100);
         var a = document.getElementById('events');
         setTimeout( function() {
             a.scrollIntoView(true);
-        }, 1000);
+        }, 100);
     }
     </script>
 
