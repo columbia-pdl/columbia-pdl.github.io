@@ -31,10 +31,10 @@ function load_events() {
 			info = data['events'][i];
 			$des = $(info['description']['html']);
 			var tags = [];
+			tmp = $des.filter("#tags").html();
+			if(tmp) {tags = tmp.split(",")};
 			if(info['status']=='live'){
-				tmp = $des.filter("#tags").html();
-				if(tmp) {tags = tmp.split(",")};
-				tags.push("all");
+				tags.push("upcoming");
 			}
 			else{
 				tags.push("past");

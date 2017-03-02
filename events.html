@@ -65,44 +65,6 @@
                 <!-- End Mobile Navbar Icon -->
 <nav id="navMenu"></nav>
 <script src= "events_menu_header.js"></script>
-                <!-- Navbar Navigation -->
-               <!--
-                <div class="nav-menu">
-                <ul class="nav-menu-inner">
-                       <li>
-                        <a href="events.html#events-communicate"><i class="ion ion-ios-compose-outline"></i>Communicate</a>
-                            
-                        </li>
-                        <li>
-                            <a href="events.html#events-lead"><i class="ion ion-ios-person-outline"></i>Lead</a>
-                            
-                        </li>
-                        <li>
-                        <a href="events.html#events-collaborate" class=""><i class="ion ion-ios-people-outline"></i>Collaborate</a>
-                        </li>
-                        <li>
-                            <a href="events.html#events-innovate" class=""><i class="ion ion-ios-lightbulb-outline"></i>Innovate</a>
-                            
-                        </li>
-                        <li>
-                            <a href="events.html#events-connect"><i class="ion ion-ios-color-filter-outline"></i>Connect</a>
-                            
-                        </li>
-                        <li>
-                            <a href="events.html#events-tech" class=""><i class="ion ion-ios-gear-outline"></i>Tech</i></a>
-                            
-                        </li>
-                        <li>
-                            <a href="index.html"<i class="ion ion-ios-home-outline"></i></a>
-                            
-                        </li>
-                        <li>
-                           <a href="contact.html"<i class="ion ion-ios-email-outline"></i></a>
-                        </li>
-                    </ul>
-                    </div>
--->
-                <!-- End Navbar Navigation -->
 
             </div>
         </header>
@@ -210,14 +172,14 @@
                 <!-- work Filter -->
                 <!<div class="row">
                     <ul class="container-filter categories-filter">
-                        <li><a class="categories" data-filter=".all">All</a></li>
+ <!--                       <li><a class="categories" data-filter=".all">All</a></li> -->
                         <li><a class="categories" data-filter=".communicate"><img alt="1" src="img/portfolio/ios7-compose.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".lead"><img alt="1" src="img/portfolio/ios7-person.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".collaborate"><img alt="1" src="img/portfolio/ios7-people.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".innovate"><img alt="1" src="img/portfolio/ios7-lightbulb.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".connect"><img alt="1" src="img/portfolio/ios-color-filter.png" class="item-container"></a></li>
                         <li><a class="categories" data-filter=".tech"><img alt="1" src="img/portfolio/ios7-gear.png" class="item-container"></a></li>
-                        <li><a class="categories" data-filter=".past">Past</a></li>
+                        <!-- <li><a class="categories" data-filter=".past">Past</a></li> -->
                     </ul>
                 </div>
                 <!-- End work Filter -->
@@ -361,28 +323,32 @@
     });
 
     function onPageLoad(){
-//alert("onPageLoad");
         if ( ! window.location.hash || -1 === window.location.hash.indexOf( '#events-' ) ) {
             return;
         }
 
-        var category = window.location.hash.replace( '#events-', '' ),
-        $filter = $( 'body' ).find( '[data-filter=".' + category + '"]' );
-
-        if ( ! $filter.length ) {
-            return;
-        }
-        // $('.container-masonry').isotope({ filter: '.past' });
-        // setTimeout( function() {
-        //      $('.container-masonry').isotope({ filter: '.' + category });
-        // }, 1000);
+        var category = window.location.hash.replace( '#events-', '' );
         setTimeout( function() {
             $filter.click();
         }, 100);
+	setTimeout( function() {
+             $('.container-masonry').isotope({ filter: '.upcoming'});
+             $('.container-masonry').isotope({ filter: '.' + category });
+        }, 2000);
+
         var a = document.getElementById('events');
         setTimeout( function() {
             a.scrollIntoView(true);
-        }, 100);
+        }, 2000);
+        
+        
+        $('.container-masonry').isotope({ filter: '.' + category });
+        
+        
+        var a = document.getElementById('events');
+        setTimeout( function() {
+            a.scrollIntoView(true);
+        }, 2000);
     }
     </script>
 

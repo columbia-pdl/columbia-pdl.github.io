@@ -44,11 +44,7 @@ $(function () {
                     
                 }
 
-            // if($filter){
-            //     $filter.click();
-            //     // $('.container-masonry').isotope({ filter: '.all' });
-            // }
-            }, 1000);
+            }, 2000);
         });
         
     });
