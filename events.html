@@ -328,18 +328,19 @@
         }
 
         var category = window.location.hash.replace( '#events-', '' );
+        
         setTimeout( function() {
-            $filter.click();
+            $('.container-masonry').isotope({ filter: '.' + category });
         }, 100);
 	setTimeout( function() {
              $('.container-masonry').isotope({ filter: '.upcoming'});
              $('.container-masonry').isotope({ filter: '.' + category });
         }, 2000);
-
+        
         var a = document.getElementById('events');
         setTimeout( function() {
             a.scrollIntoView(true);
-        }, 2000);
+        }, 100);
         
         
         $('.container-masonry').isotope({ filter: '.' + category });

@@ -36,7 +36,7 @@ $(function () {
         $(window).load(function() {
             $('.container-grid').isotope({ filter: '.past' });
             setTimeout( function() {
-                $('.container-grid').isotope({ filter: '.all' });
+                $('.container-grid').isotope({ filter: '.upcoming' });
                 try{
                     onPageLoad();
                 }
