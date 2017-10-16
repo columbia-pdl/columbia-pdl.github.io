@@ -39,16 +39,20 @@ function load_events() {
 			else{
 				tags.push("past");
 			}
-			
-			if($event_htmls.length){
-			    $event_htmls = $event_htmls.add((html_template.format(tags.join(" "),info["url"],info['logo']['url'],
-								    info['name']['text'],
-								     $des.filter("p").eq(0).text())));
+			try{
+				if($event_htmls.length){
+				    $event_htmls = $event_htmls.add((html_template.format(tags.join(" "),info["url"],info['logo']['url'],
+									    info['name']['text'],
+									     $des.filter("p").eq(0).text())));
+				}
+				else{
+				    $event_htmls = $(html_template.format(tags.join(" "),info["url"],info['logo']['url'],
+									  info['name']['text'],
+									  $des.filter("p").eq(0).text()));
+				}
 			}
-			else{
-			    $event_htmls = $(html_template.format(tags.join(" "),info["url"],info['logo']['url'],
-								  info['name']['text'],
-								  $des.filter("p").eq(0).text()));
+			catch(err){
+				console.log(err);
 			}
 		}
 		var $container2 = $('.container-grid');
