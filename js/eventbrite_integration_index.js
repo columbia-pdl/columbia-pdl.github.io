@@ -32,7 +32,7 @@ function load_events() {
 			$des = $(info['description']['html']);
 			var tags = [];
 			tmp = $des.filter("#tags").html();
-			if(tmp) {tags = tmp.split(",")};
+			if(tmp) {tags = tmp.toLowerCase().split(",")};
 			if(info['status']=='live'){
 				tags.push("upcoming");
 			}
