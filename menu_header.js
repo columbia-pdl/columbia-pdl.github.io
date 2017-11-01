@@ -1,38 +1,45 @@
 document.getElementById("navMenu").innerHTML =
 '<div class="nav-menu">'
-+'<ul class="nav-menu-inner">'
-                        +'<li>'
-                        +'<a href="events.html#events-communicate"><i class="ion ion-ios-compose-outline"></i></a>'
-                            
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="events.html#events-lead"><i class="ion ion-ios-people-outline"></i></a>'
-                            
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="events.html#events-collaborate" class=""><i class="ion ion-ios-briefcase-outline"></i></a>'
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="events.html#events-innovate" class=""><i class="ion ion-ios-bookmarks-outline"></i></a>'
-                            
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="events.html#events-connect"><i class="ion ion-ios-color-filter-outline"></i></a>'
-                            
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="events.html#events-tech" class=""><i class="ion ion-compass"></i></i></a>'
-                        
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="events.html#events-tech" class=""><i class="ion ion-ios-plus-outline"></i></i></a>'    
-                        +'</li>'
-                        +'<li>'
-                            +'<a href="index.html"<i class="ion ion-ios-home-outline"></i></a>'
-                            
-                        +'</li>'
-                        +'<li>'
-                           +'<a href="contact.html"<i class="ion ion-ios-email-outline"></i></a>'
-                        +'</li>'
-                    +'</ul>'
++'\t<ul class="nav-menu-inner">'
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-communication\';onPageLoad()"><i class="ion ion-ios-compose-outline"></i>Communication</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-leadership\';onPageLoad()"><i class="ion ion-ios-people-outline"></i>Leadership</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-portfolio\';onPageLoad()"><i class="ion ion-ios-briefcase-outline"></i>Portfolio</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-life\';onPageLoad()"><i class="ion ion-ios-alarm-outline"></i>Life</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-network\';onPageLoad()"><i class="ion ion-ios-color-filter-outline"></i>Network</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-ethics\';onPageLoad()"><i class="ion ion-compass"></i>Ethics</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-innovation\';onPageLoad()"><i class="ion ion-ios-lightbulb-outline"></i>Innovation</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a onclick="window.location.href=\'events.html#events-plus\';onPageLoad()"><i class="ion ion-ios-plus-outline"></i>PDL</a>\n' 
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a href="index.html"<i class="ion ion-ios-home-outline"></i></a>\n'   
+                       +'\t\t</li>\n\n'
+
+                       +'\t\t<li>\n'
+                       +'\t\t\t<a href="contact.html"<i class="ion ion-ios-email-outline"></i></a>\n'   
+                       +'\t\t</li>\n\n'
+
+                    +'\t</ul>'
                     +'</div>';
