@@ -32,13 +32,13 @@ function load_events() {
 			$des = $(info['description']['html']);
 			tags = [];
 			tmp = $des.filter("#tags").html();
-                        if(tmp) {tags = tmp.split(",")};
-                        if(info['status']=='live'){
+            if(tmp) {tags = tmp.toLowerCase().split(",")};
+            if(info['status']=='live'){
 			    tags.push("upcoming");
-                        }
-                        else{
+            }
+            else{
 			    tags.push("past");
-                        }
+            }
 			try{
 				if($event_htmls.length){
 				    $event_htmls = $event_htmls.add((html_template.format(tags.join(" "),info["url"],info['logo']['url'],

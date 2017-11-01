@@ -1168,6 +1168,16 @@ form label.error {
     padding-bottom: 26px;
 }
 
+.menu-icon{
+    text-align:center;
+    padding-bottom: 0px !important;
+}
+.menu-text{
+    text-align:center;
+    margin-right: 5px;
+    margin-left: 5px;
+       
+}
 /*header Logo style*/
 .header.header-prepare .logo a img.logo-light,
 .header .logo a img.logo-dark {
