@@ -1143,7 +1143,7 @@ form label.error {
         display: block;
         margin-top: 0 !important;
         position: fixed;
-        height: 85px;
+        height: 64px;
     }
 
 .header-inner {
@@ -1171,14 +1171,11 @@ form label.error {
 .menu-icon{
     text-align:center;
     padding-bottom: 0px !important;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 .menu-text{
     text-align:center;
-    margin-right: 15px;
-    margin-left: 15px;
-
+    margin-right: 5px;
+    margin-left: 5px;
        
 }
 /*header Logo style*/
