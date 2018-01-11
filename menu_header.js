@@ -45,8 +45,8 @@ document.getElementById("navMenu").innerHTML =
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a class="menu-icon" href="contact.html"><i class="ion ion-ios-email-outline"></i></a>\n' 
-                       +'\t\t\t<p class="menu-text">&nbsp;</p>\n'   
+                       +'\t\t\t<a class="menu-icon" href="contact.html"><i class="ion ion-ios-keypad-outline"></i></a>\n' 
+                       +'\t\t\t<p class="menu-text">Team</p>\n'   
                        +'\t\t</li>\n\n'
 
                     +'\t</ul>'

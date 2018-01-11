@@ -1,5 +1,22 @@
 document.getElementById("navMenu").innerHTML =
 '<div class="nav-menu">'
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
 +'\t<ul class="nav-menu-inner">'
 
 
@@ -40,8 +57,12 @@ document.getElementById("navMenu").innerHTML =
                        +'\t\t</li>\n\n'
 
                        +'\t\t<li>\n'
-                       +'\t\t\t<a href="contact.html"<i class="ion ion-ios-email-outline"></i></a>\n'   
+                       +'\t\t\t<a href="contact.html"<i class="ion ion-ios-keypad-outline"></i></a>\n'   
                        +'\t\t</li>\n\n'
 
                     +'\t</ul>'
                     +'</div>';
+
+
+                    
+

@@ -322,6 +322,8 @@ h3 {
     font-size: 21px;
     letter-spacing: 4px;
     line-height: 32px;
+    margin-bottom: 1em;
+    font-style: center;
 }
 /*
     h3:after {
@@ -2220,6 +2222,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         opacity: 0;
         visibility: hidden;
         overflow: hidden;
+        margin-right: 20px; 
         transition: all 0.5s ease-in-out 0s;
         -moz-transition: all 0.5s ease-in-out 0s;
         -webkit-transition: all 0.5s ease-in-out 0s;
